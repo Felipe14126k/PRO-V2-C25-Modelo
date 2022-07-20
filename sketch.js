@@ -3,7 +3,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
-  
+
 
 var engine, world;
 var canvas;
@@ -81,7 +81,7 @@ function keyPressed() {
   //   }
   // }
 
-   // if (keyCode === 32) {
+  // if (keyCode === 32) {
   //   if (numberOfArrows > 0) {
   //     var posX = playerArcher.body.position.x;
   //     var posY = playerArcher.body.position.y;
@@ -95,21 +95,21 @@ function keyPressed() {
   //   }
   // }
 
-   // if (keyCode === 32) {
-  //   if (numberOfArrows > 0) {
-  //     var posX = playerArcher.body.position.x;
-  //     var posY = playerArcher.body.position.y;
-  //     var angle = playerArcher.body.angle;
+   if (keyCode === 32) {
+     if (numberOfArrows > 0) {
+       var posX = playerArcher.body.position.x;
+       var posY = playerArcher.body.position.y;
+       var angle = playerArcher.body.angle;
 
-  //     var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
+       var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
 
-  //     Matter.Body.setAngle(arrow.body, angle);
-  //     playerArrows.push(arrow);
-  //     numberOfArrows -= 1;
-  //   }
-  // }
+       Matter.Body.setAngle(arrow.body, angle);
+       playerArrows.push(arrow);
+       numberOfArrows -= 1;
+     }
+   }
 
-   // if (keyCode === 32) {
+  // if (keyCode === 32) {
   //   if (numberOfArrows > 0) {
   //     var posX = playerArcher.body.position.x;
   //     var posY = playerArcher.body.position.y;
